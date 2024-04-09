@@ -1,0 +1,33 @@
+@media screen and (min-width: 620px) {
+    .restaurants, .table-menu {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .headline {
+      font-size: 48px;
+    }
+  }
+  
+  @media screen and (min-width: 920px) {
+    .restaurants {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .headline {
+      font-size: 52px;
+    }
+  
+    .toggle-menu {
+      display: none;
+    }
+  
+    .menu-list {
+      display: flex;
+    }
+    
+    .review-wrapper {
+      display: grid;
+      column-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }

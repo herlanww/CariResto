@@ -6,7 +6,6 @@ import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 import './components/nav-bar';
 import './components/skip-link';
-// import './components/hero-section';
 import './components/search-bar';
 import './components/result-header';
 import './components/restaurant-list';

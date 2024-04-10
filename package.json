@@ -14,7 +14,7 @@
     "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
-  "author": "your_name <your.email@domain.com>",
+  "author": "Herlan",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.1",

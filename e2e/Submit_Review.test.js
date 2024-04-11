@@ -4,13 +4,13 @@ Feature('Submit Review');
 
 Scenario('Submit a review', async ({ I }) => {
   I.amOnPage('/');
-  I.seeElement('.card');
+  I.waitForElement('.card');
   const firstRestaurant = locate('.card').first();
   I.click(firstRestaurant);
 
-  I.seeElement('.post-review');
-  I.seeElement('.review-name strong');
-  I.seeElement('.review-review q');
+  I.waitForElement('.post-review');
+  I.waitForElement('.review-name strong');
+  I.waitForElement('.review-review q');
 
   const name = 'E2ETest';
   const date = new Date();

@@ -12,16 +12,16 @@ Scenario('Liking a restaurant', async ({ I }) => {
   I.see('You don\'t have any favorite restaurants', 'p');
 
   I.amOnPage('/');
-  I.seeElement('.card-title a');
+  I.waitForElement('.card-title a');
   const firstRestaurant = locate('.card-title a').first();
   const firstRestaurantTitle = await I.grabTextFrom(firstRestaurant);
   I.click(firstRestaurant);
 
-  I.seeElement('#like-button');
+  I.waitForElement('#like-button');
   I.click('#like-button');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('.card');
+  I.waitForElement('.card');
   const likedRestaurantTitle = await I.grabTextFrom('.card-title a');
 
   assert.strictEqual(firstRestaurantTitle, likedRestaurantTitle);
@@ -32,19 +32,19 @@ Scenario('Unliking a restaurant', async ({ I }) => {
   I.see('You don\'t have any favorite restaurants', 'p');
 
   I.amOnPage('/');
-  I.seeElement('.card');
+  I.waitForElement('.card');
   const firstRestaurant = locate('.card').first();
   I.click(firstRestaurant);
 
-  I.seeElement('#like-button');
+  I.waitForElement('#like-button');
   I.click('#like-button');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('.card');
+  I.waitForElement('.card');
   const likedRestaurant = locate('.card').first();
   I.click(likedRestaurant);
 
-  I.seeElement('#like-button');
+  I.waitForElement('#like-button');
   I.click('#like-button');
 
   I.amOnPage('/#/favorite');

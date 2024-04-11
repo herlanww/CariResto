@@ -21,6 +21,7 @@ const Detail = {
     try {
       const restaurant = await RestaurantSource.getDetail(url.id);
       loadingElm.setAttribute('style', 'display: none;');
+      restoContainer.scrollTop = 0;
       restoContainer.innerHTML = restaurantDetailTemplate(restaurant);
 
       LikeButtonPresenter.init({

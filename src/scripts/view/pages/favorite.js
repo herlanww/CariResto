@@ -18,6 +18,7 @@ const Favorite = {
 
     const favorite = await FavoriteRestaurantIdb.getAllRestaurants();
     loadingElm.setAttribute('style', 'display: none;');
+    favContainer.scrollTop = 0;
     favHeader.textContent = 'Your Favorite Restaurants';
     const restoListElm = document.querySelector('#restaurant-list');
     function renderResto(restaurants) { restoListElm.restaurants = restaurants; }

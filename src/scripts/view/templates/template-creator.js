@@ -3,6 +3,7 @@ import CONFIG from '../../globals/config';
 export const restaurantDetailTemplate = (restaurant) => `
   <div class="cover-img">
     <picture>
+      <source media="(min-width: 920px)" srcset="${CONFIG.BASE_L_IMAGE_URL}/${restaurant.pictureId}">
       <source media="(min-width: 620px)" srcset="${CONFIG.BASE_M_IMAGE_URL}/${restaurant.pictureId}">
       <img src="${CONFIG.BASE_S_IMAGE_URL}/${restaurant.pictureId}" alt="">
     </picture>

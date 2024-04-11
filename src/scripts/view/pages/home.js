@@ -7,7 +7,7 @@ const Home = {
         <picture>
           <source media="(min-width: 920px)" srcset="./images/heros/hero-image_2-large.jpg">
           <source media="(min-width: 620px)" srcset="./images/heros/hero-image_2-medium.jpg">
-          <img fetchpriority="high" src="./images/heros/hero-image_2-small.jpg" alt="">
+          <img src="./images/heros/hero-image_2-small.jpg" alt="">
         </picture>
         <div class="hero-content">
           <h2 class="headline">Find the best restaurant<br>for any occasion.</h2>

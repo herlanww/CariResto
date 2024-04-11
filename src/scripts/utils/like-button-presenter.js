@@ -42,11 +42,13 @@ const LikeButtonPresenter = {
 
   _renderLikeButton() {
     this._likeButton.setAttribute('aria-label', 'like');
+    this._likeButton.title = 'Add to Favorite';
     this._likeIcon.classList.replace('fa-solid', 'fa-regular');
   },
 
   _renderUnlikeButton() {
     this._likeButton.setAttribute('aria-label', 'unlike');
+    this._likeButton.title = 'Remove from Favorite';
     this._likeIcon.classList.replace('fa-regular', 'fa-solid');
   },
 };

@@ -365,6 +365,14 @@ header {
   padding: 8px;
 }
 
+.like-button .fa-regular {
+  color: #222;
+}
+
+.like-button .fa-regular:hover {
+  color: #888;
+}
+
 .like-button .fa-solid {
   color: #F20D0D;
 }

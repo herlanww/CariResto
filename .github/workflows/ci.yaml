@@ -12,8 +12,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]
-        os: [macos-latest, macos-13, macos-12]
+        node-version: ['18.x', '20.x']
+        os: [ubuntu-22.04, ubuntu-20.04]
 
     steps:
       - uses: actions/checkout@v3
